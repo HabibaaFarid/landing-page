@@ -1,0 +1,28 @@
+.main-form-container {
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  margin-top: 5%;
+  .form-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .text-container {
+      display: grid;
+      .text {
+        color: #ff7f26;
+        font-weight: 500;
+      }
+      .form-button {
+        width: 40%;
+        height: 40px;
+        justify-self: center;
+        margin-top: 2%;
+        background-color: #ff7f26;
+        color: white;
+        border-radius: 5px;
+        border: #ff7f26;
+      }
+    }
+  }
+}

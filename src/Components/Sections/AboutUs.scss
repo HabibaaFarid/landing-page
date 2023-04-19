@@ -1,0 +1,16 @@
+.about-container {
+  display: grid;
+  justify-content: center;
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .about-para {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    justify-self: center;
+  }
+}
