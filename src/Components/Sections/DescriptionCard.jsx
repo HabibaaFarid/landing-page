@@ -1,3 +1,5 @@
+import "./DescriptionCard.scss";
+
 const DescriptionCard = (props) => {
   return (
     <div
@@ -11,7 +13,7 @@ const DescriptionCard = (props) => {
         borderRadius: props.border,
       }}
     >
-      <img src="" alt="" />
+      <img src={props.icon} alt="" className="card-img" />
       <p>{props.descriptionText}</p>
     </div>
   );

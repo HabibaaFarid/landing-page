@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import logo1 from "./images/logo1.jpg";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -10,11 +11,11 @@ const NavBar = () => {
           <Navbar.Brand href="/">
             <img
               style={{
-                width: "50%",
+                width: "10%",
                 justifySelf: "start",
                 alignSelf: "center",
               }}
-              src=""
+              src={logo1}
               alt="logo"
             />
           </Navbar.Brand>

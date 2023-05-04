@@ -1,4 +1,8 @@
 import DescriptionCard from "./DescriptionCard";
+import img1 from "../images/icon1.png";
+import img2 from "../images/icon2.png";
+import img3 from "../images/icon3.png";
+import img4 from "../images/doctors.jpg";
 import "./Description.scss";
 
 const Description = () => {
@@ -6,22 +10,25 @@ const Description = () => {
     <div className="main-container">
       <div className="cards-container">
         <DescriptionCard
+          icon={img1}
           descriptionText="Up to 30% discount on OPD/IPD"
           backgroundColor="#FE5722"
           border="10px 0px 0px 10px"
         />
         <DescriptionCard
+          icon={img2}
           descriptionText="Up to 40% discount on Lab Tests & Diagnostic Centers"
           backgroundColor="#FEC107"
         />
         <DescriptionCard
+          icon={img3}
           descriptionText="Up to 20% discount on Medicines"
           backgroundColor="#009788"
           border="0px 10px 10px 0px"
         />
       </div>
       <div className="text-container">
-        <img src="" alt="doctor's photo" />
+        <img src={img4} alt="doctor's photo" className="description-img" />
         <div>
           <p className="description-text">
             At 7Rogaym Healthcare (P) Ltd, we believe that everyone should have

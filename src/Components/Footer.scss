@@ -1,0 +1,44 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  .footer-container__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .footer-logo {
+      width: 30%;
+      justify-self: end;
+      align-self: center;
+    }
+    .footer-text-container {
+      display: grid;
+      align-content: center;
+      width: 70%;
+      margin-left: 2%;
+      .footer-title {
+        font-size: 1.2rem;
+        color: #ff7f26;
+        font-weight: bold;
+      }
+      .footer-text {
+        margin-bottom: 0;
+      }
+      .footer-icon {
+        margin-right: 2%;
+      }
+    }
+  }
+  .footer-contact {
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    width: 70%;
+    .footer-title2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .footer-icon {
+      margin-right: 2%;
+    }
+  }
+}
