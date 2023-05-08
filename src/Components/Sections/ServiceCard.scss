@@ -1,0 +1,16 @@
+.service-card {
+  height: 100px;
+  width: 25%;
+  display: grid;
+  justify-self: center;
+  margin: 2% 0;
+  grid-auto-rows: 80%;
+  .services-img {
+    width: 50%;
+    justify-self: center;
+  }
+  .service-text {
+    justify-self: center;
+    font-weight: bold;
+  }
+}

@@ -1,3 +1,4 @@
+import faqs from "../images/faqs.png";
 import "./Faqs.scss";
 
 const Faqs = () => {
@@ -10,6 +11,7 @@ const Faqs = () => {
         understand our program better. If you have any other questions, please
         feel free to contact us.
       </p>
+      <img src={faqs} alt="faqs" className="faqs-img" />
     </div>
   );
 };

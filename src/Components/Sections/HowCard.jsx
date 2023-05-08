@@ -1,8 +1,10 @@
+import "./HowCard.scss";
+
 const HowCard = (props) => {
   return (
-    <div>
-      <img src="" alt="" />
-      <p>{props.text}</p>
+    <div className="hiw-card">
+      <img src={props.img} alt="" />
+      <p className="hiw-text">{props.text}</p>
     </div>
   );
 };

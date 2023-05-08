@@ -7,6 +7,7 @@ import Partners from "./Sections/Partners";
 import HospitalsForm from "./Sections/HospitalsFrom";
 import AboutUs from "./Sections/AboutUs";
 import Faqs from "./Sections/Faqs";
+import Testimony from "./Sections/Testimony";
 import Footer from "./Footer";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <HospitalsForm />
       <AboutUs />
       <Faqs />
+      <Testimony />
       <Footer />
     </>
   );

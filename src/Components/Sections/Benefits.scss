@@ -1,8 +1,11 @@
-.benefits-title {
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-left: 4%;
-}
-ul {
-  list-style: none;
+.benefits-container {
+  margin-left: 8%;
+  .benefits-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 4%;
+  }
+  ul {
+    list-style: none;
+  }
 }

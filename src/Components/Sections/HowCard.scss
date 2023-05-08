@@ -1,0 +1,11 @@
+.hiw-card {
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  height: 30%;
+  grid-auto-rows: 200%;
+  .hiw-text {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

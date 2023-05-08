@@ -1,32 +1,32 @@
-.container {
+.navcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-.logo1 {
-  width: 15%;
-}
+  .logo1 {
+    width: 15%;
+  }
 
-.nav-links {
-  font-size: 20px;
-  color: black;
-}
-select {
-  border: none;
-  font-size: 20px;
-}
-option {
-  font-size: 15px;
-}
+  .nav-links {
+    font-size: 20px;
+    color: black;
+  }
+  select {
+    border: none;
+    font-size: 20px;
+  }
+  option {
+    font-size: 15px;
+  }
 
-body.active-modal {
-  display: block;
-}
+  body.active-modal {
+    display: block;
+  }
 
-.nav-buttons {
-  border: 0;
-  background-color: transparent;
+  .nav-buttons {
+    border: 0;
+    background-color: transparent;
 
-  align-self: center;
+    align-self: center;
+  }
 }
 .navbar-light .navbar-nav .nav-link {
   color: #ff7f26;

@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar collapseOnSelect expand="lg">
-        <Container className="container">
+        <Container className="nav-container">
           <Navbar.Brand href="/">
             <img
               style={{
@@ -30,31 +30,28 @@ const NavBar = () => {
               alt="logo"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar
+            id="responsive-navbar-nav"
+            style={{
+              justifySelf: "end",
+              alignSelf: "center",
+            }}
+          >
             <Nav>
               <Nav className="me-auto">
-                <Nav.Link href="" className="shipments">
-                  Home
-                </Nav.Link>
+                <Nav.Link href="">Home</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="" className="shipments">
-                  Services
-                </Nav.Link>
+                <Nav.Link href="">Services</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="" className="shipments">
-                  Hospitals
-                </Nav.Link>
+                <Nav.Link href="">Hospitals</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="" className="shipments">
-                  Contact Us
-                </Nav.Link>
+                <Nav.Link href="">Contact Us</Nav.Link>
               </Nav>
             </Nav>
-          </Navbar.Collapse>
+          </Navbar>
         </Container>
       </Navbar>
     </>

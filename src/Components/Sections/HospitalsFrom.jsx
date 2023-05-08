@@ -1,3 +1,4 @@
+import img1 from "../images/hospital-img.jpg";
 import "./HospitalsForm.scss";
 
 const HospitalsForm = () => {
@@ -13,7 +14,7 @@ const HospitalsForm = () => {
           </p>
           <button className="form-button">Hospital Registration Form</button>
         </div>
-        <img src="" alt="animated hospital" />
+        <img src={img1} alt="animated hospital" className="hospital-img" />
       </div>
     </div>
   );

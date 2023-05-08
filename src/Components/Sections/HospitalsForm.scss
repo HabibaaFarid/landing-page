@@ -12,6 +12,9 @@
       .text {
         color: #ff7f26;
         font-weight: 500;
+        width: 55%;
+        text-align: center;
+        justify-self: center;
       }
       .form-button {
         width: 40%;
@@ -23,6 +26,9 @@
         border-radius: 5px;
         border: #ff7f26;
       }
+    }
+    .hospital-img {
+      width: 100%;
     }
   }
 }

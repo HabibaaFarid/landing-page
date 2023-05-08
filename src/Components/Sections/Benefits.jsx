@@ -2,7 +2,7 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 import "./Benefits.scss";
 const Benefits = () => {
   return (
-    <div>
+    <div className="benefits-container">
       <p className="benefits-title">Additional Benefits:</p>
       <ul>
         <li>
