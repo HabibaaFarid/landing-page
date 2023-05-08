@@ -1,14 +1,28 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo1 from "./images/logo1.jpg";
+import logo2 from "./images/logo2.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg">
-        <Container className="nav-container">
-          <Navbar.Brand href="/">
+      <Navbar
+        id="navbar"
+        style={{
+          display: "grid",
+          width: "100%",
+          justifyContent: "center",
+        }}
+      >
+        <Container
+          className="nav-container"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+          }}
+        >
+          <Navbar>
             <img
               style={{
                 width: "10%",
@@ -18,18 +32,18 @@ const NavBar = () => {
               src={logo1}
               alt="logo"
             />
-          </Navbar.Brand>
-          <Navbar.Brand href="/">
+          </Navbar>
+          <Navbar>
             <img
               style={{
                 width: "50%",
-                justifySelf: "center",
+                justifySelf: "start",
                 alignSelf: "center",
               }}
-              src=""
+              src={logo2}
               alt="logo"
             />
-          </Navbar.Brand>
+          </Navbar>
           <Navbar
             id="responsive-navbar-nav"
             style={{
@@ -39,16 +53,16 @@ const NavBar = () => {
           >
             <Nav>
               <Nav className="me-auto">
-                <Nav.Link href="">Home</Nav.Link>
+                <Nav.Link href="#navbar">Home</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="">Services</Nav.Link>
+                <Nav.Link href="#services">Services</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="">Hospitals</Nav.Link>
+                <Nav.Link href="#hospitals">Hospitals</Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="">Contact Us</Nav.Link>
+                <Nav.Link href="#contact">Contact Us</Nav.Link>
               </Nav>
             </Nav>
           </Navbar>

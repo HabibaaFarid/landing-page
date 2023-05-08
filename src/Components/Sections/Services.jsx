@@ -12,8 +12,10 @@ import "./Services.scss";
 
 const Services = () => {
   return (
-    <div className="services-container">
-      <p className="services-title">The Services We Provide</p>
+    <div id="services" className="services-container">
+      <p className="services-title">
+        The <spav style={{ color: "#2FB3B6" }}> Services</spav> We Provide
+      </p>
       <div className="services-cards-container">
         <ServiceCard img={heart} text="Heart Diseases" color="#000000" />
         <ServiceCard img={general} text="General Surgery" color="#000000" />

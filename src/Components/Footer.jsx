@@ -8,7 +8,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div id="contact" className="footer-container">
       <div style={{ display: "grid", justifySelf: "center" }}>
         <div className="footer-container__info">
           <img src={logo} alt="logo" className="footer-logo" />
