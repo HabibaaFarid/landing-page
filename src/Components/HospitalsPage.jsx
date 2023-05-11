@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 const HospitalsPage = () => {
-  const [hospitals, setHospitals] = useState();
+  const [hospitals, setHospitals] = useState({});
   useEffect(() => {
     axios
       .get(
@@ -16,7 +16,7 @@ const HospitalsPage = () => {
   }, []);
   return (
     <>
-      {hospitals.length > 0 ? (
+      {hospitals ? (
         <>
           <NavBar />
           <div
