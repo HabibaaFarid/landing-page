@@ -16,20 +16,26 @@ const HospitalsPage = () => {
   }, []);
   return (
     <>
-      <NavBar />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          width: "100%",
-          margin: "auto",
-          justifyContent: "center",
-        }}
-      >
-        <HospitalsCard hospitals={hospitals} />
-      </div>
-      <Footer />
+      {hospitals.length > 0 ? (
+        <>
+          <NavBar />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              width: "100%",
+              margin: "auto",
+              justifyContent: "center",
+            }}
+          >
+            <HospitalsCard hospitals={hospitals} />
+          </div>
+          <Footer />
+        </>
+      ) : (
+        ""
+      )}
     </>
   );
 };
