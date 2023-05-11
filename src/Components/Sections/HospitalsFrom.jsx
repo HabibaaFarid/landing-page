@@ -3,7 +3,7 @@ import "./HospitalsForm.scss";
 
 const HospitalsForm = () => {
   return (
-    <div id="hospitals" className="main-form-container">
+    <div  className="main-form-container">
       <div className="form-container">
         <div className="text-container">
           <p className="text">

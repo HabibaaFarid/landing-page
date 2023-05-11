@@ -5,7 +5,7 @@ import "./Partners.scss";
 const Partners = () => {
   const navigate = useNavigate();
   return (
-    <div className="main-container">
+    <div id="hospitals" className="main-container">
       <p className="partners-title">Our Partners</p>
       <p className="partners-subtitle">
         We have partnered with some of the best hospitals and clinics across the
