@@ -1,19 +1,14 @@
+import { GrLocation } from "react-icons/gr";
+import { ImPhone } from "react-icons/im";
 import icon from "./images/hospital_icon.jpg";
 
 const HospitalsCard = (props) => {
   const hospitals = props.hospitals;
-  console.log("henaaaaaaa", hospitals);
-  console.log(typeof hospitals);
   let hospitalInfo = [];
 
   for (const key in hospitals) {
     hospitalInfo.push(hospitals[key]);
   }
-  console.log(hospitalInfo);
-
-  hospitalInfo.forEach((element) => {
-    console.log(element.state);
-  });
 
   return (
     <>
@@ -30,19 +25,18 @@ const HospitalsCard = (props) => {
               boxShadow: "2px 2px lightgrey",
             }}
           >
+            <img src={icon} alt="" style={{ width: "30%" }} />
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr 1fr",
+                gridTemplateColumns: "1fr 1fr",
                 alignItems: "center",
                 marginBottom: "2%",
               }}
             >
-              <img src={icon} alt="" style={{ width: "30%" }} />
-
               <p
                 style={{
-                  justifySelf: "center",
+                  justifySelf: "start",
                   alignSelf: "center",
                   marginBottom: "0  ",
                 }}
@@ -61,8 +55,27 @@ const HospitalsCard = (props) => {
               </p>
             </div>
             <p style={{ fontWeight: "bold" }}>{hos.entity_name}</p>
-            <p style={{}}>{hos.address}</p>
+            <a
+              href={hos.map_link}
+              style={{
+                alignSelf: "center",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              <GrLocation style={{ alignSelf: "center" }} />
+              {"  "}
+              {hos.address}
+            </a>
             <p>{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
+            <a
+              href={`tel:${hos.mobile_no}`}
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <ImPhone />
+              {"  "}
+              {hos.mobile_no}
+            </a>
             <hr style={{ color: "grey" }} />
             <div style={{ display: "grid" }}>
               <p style={{ justifySelf: "center" }}>Discount%</p>

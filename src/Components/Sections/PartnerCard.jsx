@@ -1,3 +1,4 @@
+import { GrLocation } from "react-icons/gr";
 import icon from "../images/hospital_icon.jpg";
 
 const PartnerCard = () => {
@@ -22,19 +23,18 @@ const PartnerCard = () => {
           boxShadow: "2px 2px lightgrey",
         }}
       >
+        <img src={icon} alt="" style={{ width: "30%" }} />
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: "1fr 1fr",
             alignItems: "center",
             marginBottom: "2%",
           }}
         >
-          <img src={icon} alt="" style={{ width: "30%" }} />
-
           <p
             style={{
-              justifySelf: "center",
+              justifySelf: "start",
               alignSelf: "center",
               marginBottom: "0  ",
             }}
@@ -53,9 +53,10 @@ const PartnerCard = () => {
           </p>
         </div>
         <p style={{ fontWeight: "bold" }}>Aadhaar Multi Speciality Hospital</p>
-        <p style={{}}>
-          Plot No. 32, Radha Krishna Colony Near Karond Chouraha Bhopal
-        </p>
+        <a href="https://maps.app.goo.gl/1yeVQrY7GNtzBJaK9" style={{color: "black", textDecoration: "none"}}>
+          <GrLocation />
+          {"  "} Plot No. 32, Radha Krishna Colony Near Karond Chouraha Bhopal
+        </a>
         <p>Bhopal, Bhopal, MP, 462038</p>
         <hr style={{ color: "grey" }} />
         <div style={{ display: "grid" }}>
@@ -82,19 +83,18 @@ const PartnerCard = () => {
           boxShadow: "2px 2px lightgrey",
         }}
       >
+        <img src={icon} alt="" style={{ width: "30%" }} />
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: "1fr 1fr",
             alignItems: "center",
             marginBottom: "2%",
           }}
         >
-          <img src={icon} alt="" style={{ width: "30%" }} />
-
           <p
             style={{
-              justifySelf: "center",
+              justifySelf: "start",
               alignSelf: "center",
               marginBottom: "0  ",
             }}
@@ -113,7 +113,10 @@ const PartnerCard = () => {
           </p>
         </div>
         <p style={{ fontWeight: "bold" }}>Srijan General Hospital</p>
-        <p style={{}}>G-sector Near Sant. Thomas School Ayodhya Bhopal</p>
+        <a href="https://maps.app.goo.gl/fv8ckwzwjVSWzaYB6" style={{color: "black", textDecoration: "none"}}>
+          <GrLocation />
+          {"  "}G-sector Near Sant. Thomas School Ayodhya Bhopal
+        </a>
         <p>Bhopal, Bhopal, MP, 462041</p>
         <hr style={{ color: "grey" }} />
         <div style={{ display: "grid" }}>
@@ -140,19 +143,18 @@ const PartnerCard = () => {
           boxShadow: "2px 2px lightgrey",
         }}
       >
+        <img src={icon} alt="" style={{ width: "30%" }} />
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: "1fr 1fr",
             alignItems: "center",
             marginBottom: "2%",
           }}
         >
-          <img src={icon} alt="" style={{ width: "30%" }} />
-
           <p
             style={{
-              justifySelf: "center",
+              justifySelf: "start",
               alignSelf: "center",
               marginBottom: "0  ",
             }}
@@ -171,10 +173,14 @@ const PartnerCard = () => {
           </p>
         </div>
         <p style={{ fontWeight: "bold" }}>Maruti Multispeciality Hospital</p>
-        <p style={{}}>
+        <a
+          href="marutimultispecilityhospital@gmail.com"
+          style={{ color: "black", textDecoration: "none" }}
+        >
+          <GrLocation />
           B-21 Patel Nagar Near Dada Ji Ka Dham Bardhman Colony Raisen Road
           Bhopal
-        </p>
+        </a>
         <p>Bhopal, Bhopal, MP, 462022</p>
         <hr style={{ color: "grey" }} />
         <div style={{ display: "grid" }}>

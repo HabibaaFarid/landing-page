@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import HospitalsCard from "./HospitalsCard";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const HospitalsPage = () => {
   const [hospitals, setHospitals] = useState();
@@ -13,18 +15,22 @@ const HospitalsPage = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        width: "100%",
-        margin: "auto",
-        justifyContent: "center",
-      }}
-    >
-      <HospitalsCard hospitals={hospitals} />
-    </div>
+    <>
+      <NavBar />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          width: "100%",
+          margin: "auto",
+          justifyContent: "center",
+        }}
+      >
+        <HospitalsCard hospitals={hospitals} />
+      </div>
+      <Footer />
+    </>
   );
 };
 
