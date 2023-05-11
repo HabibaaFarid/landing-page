@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import HospitalsCard from "./HospitalsCard";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 
 const HospitalsPage = () => {
   const [hospitals, setHospitals] = useState({});
@@ -18,7 +16,6 @@ const HospitalsPage = () => {
     <>
       {hospitals ? (
         <>
-          <NavBar />
           <div
             style={{
               display: "flex",
@@ -31,7 +28,6 @@ const HospitalsPage = () => {
           >
             <HospitalsCard hospitals={hospitals} />
           </div>
-          <Footer />
         </>
       ) : (
         ""
