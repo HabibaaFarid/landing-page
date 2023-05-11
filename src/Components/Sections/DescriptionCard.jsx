@@ -5,6 +5,7 @@ const DescriptionCard = (props) => {
     <div
       style={{
         width: "40%",
+        height: "250px",
         display: "grid",
         justifySelf: "center",
         backgroundColor: props.backgroundColor,
@@ -14,7 +15,7 @@ const DescriptionCard = (props) => {
       }}
     >
       <img src={props.icon} alt="" className="card-img" />
-      <p>{props.descriptionText}</p>
+      <p style={{ alignSelf: "center" }}>{props.descriptionText}</p>
     </div>
   );
 };

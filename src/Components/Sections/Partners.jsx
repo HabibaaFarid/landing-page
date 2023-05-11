@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+import PartnerCard from "./PartnerCard";
 import "./Partners.scss";
 
 const Partners = () => {
+  const navigate = useNavigate();
   return (
     <div className="main-container">
       <p className="partners-title">Our Partners</p>
@@ -11,8 +14,14 @@ const Partners = () => {
         reputatuion for quality care, advanced technology, and experienced
         medical staff.
       </p>
+      <PartnerCard style={{ width: "80%" }} />
 
-      <button className="partners-button">Show More</button>
+      <button
+        className="partners-button"
+        onClick={() => navigate("/hospitals")}
+      >
+        Show More
+      </button>
     </div>
   );
 };
