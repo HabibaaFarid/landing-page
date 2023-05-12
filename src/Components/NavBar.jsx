@@ -33,17 +33,19 @@ const NavBar = () => {
               }}
               src={logo1}
               alt="logo"
+              onClick={() => navigate("/")}
             />
           </Navbar>
           <Navbar>
             <img
               style={{
-                width: "40%",
+                width: "50%",
                 justifySelf: "start",
                 alignSelf: "center",
               }}
               src={logo2}
               alt="logo"
+              onClick={() => navigate("/")}
             />
           </Navbar>
           <Navbar
@@ -55,13 +57,14 @@ const NavBar = () => {
           >
             <Nav>
               <Nav className="me-auto">
-                <Nav.Link onClick={() => navigate("/")}>Home</Nav.Link>
+                <Nav.Link onClick={() => window.location.replace("/#services")}>
+                  Services
+                </Nav.Link>
               </Nav>
               <Nav className="me-auto">
-                <Nav.Link href="#services">Services</Nav.Link>
-              </Nav>
-              <Nav className="me-auto">
-                <Nav.Link href="#hospitals">Hospitals</Nav.Link>
+                <Nav.Link onClick={() => window.location.replace("/hospitals")}>
+                  Hospitals
+                </Nav.Link>
               </Nav>
               <Nav className="me-auto">
                 <Nav.Link href="#contact">Contact Us</Nav.Link>

@@ -28,7 +28,11 @@ const HospitalsCard = (props) => {
               boxShadow: "2px 2px lightgrey",
             }}
           >
-            <img src={icon} alt="" style={{ width: "30%" }} />
+            <img
+              src={hos.images.length > 0 ? hos.images[0] : icon}
+              alt=""
+              style={{ width: "250px", height: "200px", justifySelf: "center" }}
+            />
             <div
               style={{
                 display: "grid",
