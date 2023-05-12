@@ -1,8 +1,8 @@
 import { GrLocation } from "react-icons/gr";
 import { ImPhone } from "react-icons/im";
-import icon from "./images/hospital_icon.jpg";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import icon from "../images/hospital_icon.jpg";
+import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 const HospitalsCard = (props) => {
   const hospitals = props.hospitals;

@@ -1,5 +1,5 @@
 import { GrLocation } from "react-icons/gr";
-import icon from "../images/hospital_icon.jpg";
+import icon from "../../images/hospital_icon.jpg";
 
 const PartnerCard = () => {
   return (
@@ -53,7 +53,10 @@ const PartnerCard = () => {
           </p>
         </div>
         <p style={{ fontWeight: "bold" }}>Aadhaar Multi Speciality Hospital</p>
-        <a href="https://maps.app.goo.gl/1yeVQrY7GNtzBJaK9" style={{color: "black", textDecoration: "none"}}>
+        <a
+          href="https://maps.app.goo.gl/1yeVQrY7GNtzBJaK9"
+          style={{ color: "black", textDecoration: "none" }}
+        >
           <GrLocation />
           {"  "} Plot No. 32, Radha Krishna Colony Near Karond Chouraha Bhopal
         </a>
@@ -113,7 +116,10 @@ const PartnerCard = () => {
           </p>
         </div>
         <p style={{ fontWeight: "bold" }}>Srijan General Hospital</p>
-        <a href="https://maps.app.goo.gl/fv8ckwzwjVSWzaYB6" style={{color: "black", textDecoration: "none"}}>
+        <a
+          href="https://maps.app.goo.gl/fv8ckwzwjVSWzaYB6"
+          style={{ color: "black", textDecoration: "none" }}
+        >
           <GrLocation />
           {"  "}G-sector Near Sant. Thomas School Ayodhya Bhopal
         </a>

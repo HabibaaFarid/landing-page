@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo1 from "./images/logo1.jpg";
-import logo2 from "./images/logo2.png";
+import logo1 from "../images/logo1.jpg";
+import logo2 from "../images/logo2.png";
 import "./NavBar.scss";
 import { useNavigate } from "react-router-dom";
 

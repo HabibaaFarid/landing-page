@@ -1,13 +1,13 @@
 import Benefits from "./Benefits";
 import ServiceCard from "./ServiceCard";
-import heart from "../images/heart.png";
-import dental from "../images/dental.png";
-import diag from "../images/diag.png";
-import eye from "../images/eyeCare.png";
-import general from "../images/generalSurgery.png";
-import ortho from "../images/ortho.png";
-import neuro from "../images/neuro.png";
-import med from "../images/medicine.png";
+import heart from "../../images/heart.png";
+import dental from "../../images/dental.png";
+import diag from "../../images/diag.png";
+import eye from "../../images/eyeCare.png";
+import general from "../../images/generalSurgery.png";
+import ortho from "../../images/ortho.png";
+import neuro from "../../images/neuro.png";
+import med from "../../images/medicine.png";
 import "./Services.scss";
 
 const Services = () => {

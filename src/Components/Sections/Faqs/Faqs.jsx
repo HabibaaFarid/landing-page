@@ -1,4 +1,4 @@
-import faqs from "../images/faqs.png";
+import faqs from "../../images/faqs.png";
 import "./Faqs.scss";
 
 const Faqs = () => {

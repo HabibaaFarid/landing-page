@@ -1,5 +1,5 @@
-import logo from "./images/logo1.jpg";
-import flag from "./images/download.jpeg";
+import logo from "../images/logo1.jpg";
+import flag from "../images/download.jpeg";
 import { GrLocation } from "react-icons/gr";
 import { ImPhone } from "react-icons/im";
 import { RiMailSendLine } from "react-icons/ri";

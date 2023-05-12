@@ -1,8 +1,8 @@
 import DescriptionCard from "./DescriptionCard";
-import img1 from "../images/icon1.png";
-import img2 from "../images/icon2.png";
-import img3 from "../images/icon3.png";
-import img4 from "../images/doctors.jpg";
+import img1 from "../../images/icon1.png";
+import img2 from "../../images/icon2.png";
+import img3 from "../../images/icon3.png";
+import img4 from "../../images/doctors.jpg";
 import "./Description.scss";
 
 const Description = () => {

@@ -1,4 +1,4 @@
-import img from "../images/healthCard.png";
+import img from "../../images/healthCard.png";
 import "./HealthCard.scss";
 const HealthCard = () => {
   return (

@@ -1,14 +1,14 @@
-import NavBar from "./NavBar";
-import HealthCard from "./Sections/HealthCard";
-import Description from "./Sections/Description";
-import Services from "./Sections/Services";
-import HowItWorks from "./Sections/HowItWorks";
-import Partners from "./Sections/Partners";
-import HospitalsForm from "./Sections/HospitalsFrom";
-import AboutUs from "./Sections/AboutUs";
-import Faqs from "./Sections/Faqs";
-import Testimony from "./Sections/Testimony";
-import Footer from "./Footer";
+import NavBar from "./NavBar/NavBar";
+import HealthCard from "./Sections/HealthCard/HealthCard";
+import Description from "./Sections/Description/Description";
+import Services from "./Sections/Services/Services";
+import HowItWorks from "./Sections/HowItWorks/HowItWorks";
+import Partners from "./Sections/Partners/Partners";
+import HospitalsForm from "./Sections/Partners/HospitalsFrom";
+import AboutUs from "./Sections/AboutUs/AboutUs";
+import Faqs from "./Sections/Faqs/Faqs";
+import Testimony from "./Sections/Testimony/Testimony";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (

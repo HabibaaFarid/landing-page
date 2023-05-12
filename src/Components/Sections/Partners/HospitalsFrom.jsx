@@ -1,9 +1,9 @@
-import img1 from "../images/hospital-img.jpg";
+import img1 from "../../images/hospital-img.jpg";
 import "./HospitalsForm.scss";
 
 const HospitalsForm = () => {
   return (
-    <div  className="main-form-container">
+    <div className="main-form-container">
       <div className="form-container">
         <div className="text-container">
           <p className="text">

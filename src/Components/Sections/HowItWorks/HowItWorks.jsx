@@ -1,7 +1,7 @@
 import HowCard from "./HowCard";
-import img1 from "../images/hiw1.png";
-import img2 from "../images/hiw2.png";
-import img3 from "../images/hiw3.png";
+import img1 from "../../images/hiw1.png";
+import img2 from "../../images/hiw2.png";
+import img3 from "../../images/hiw3.png";
 import "./HowItWorks.scss";
 
 const HowItWorks = () => {
