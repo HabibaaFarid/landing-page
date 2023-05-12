@@ -4,9 +4,23 @@ import logo1 from "./images/logo1.jpg";
 import logo2 from "./images/logo2.png";
 import "./NavBar.scss";
 import { useNavigate } from "react-router-dom";
+import { BsWindowSidebar } from "react-icons/bs";
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const section = document.querySelector(location.hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
       <Navbar
@@ -56,18 +70,17 @@ const NavBar = () => {
             }}
           >
             <Nav>
-              {window.location.pathname.includes("hospitals") ? (
-                ""
-              ) : (
-                <Nav className="me-auto">
-                  <Nav.Link
-                    onClick={() => window.location.replace("/#services")}
-                  >
-                    Services
-                  </Nav.Link>
-                </Nav>
-              )}
-
+              <Nav className="me-auto">
+                <Nav.Link
+                  onClick={() => {
+                    window.location.pathname.includes("hospitals")
+                      ? window.location.replace("/#services")
+                      : window.location.replace("#services");
+                  }}
+                >
+                  Services
+                </Nav.Link>
+              </Nav>
               <Nav className="me-auto">
                 <Nav.Link onClick={() => window.location.replace("/hospitals")}>
                   Hospitals

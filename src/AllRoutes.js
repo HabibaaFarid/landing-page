@@ -9,6 +9,7 @@ const AllRoutes = () => {
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/hospitals" element={<HospitalsPage />} />
+      <Route exact path="/#services" element={<Home />} />
     </Routes>
   );
 };
