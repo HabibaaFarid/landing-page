@@ -4,7 +4,6 @@ import logo1 from "./images/logo1.jpg";
 import logo2 from "./images/logo2.png";
 import "./NavBar.scss";
 import { useNavigate } from "react-router-dom";
-import { BsWindowSidebar } from "react-icons/bs";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

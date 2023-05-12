@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import HospitalsPage from "./Components/HospitalsPage";
-import Services from "./Components/Sections/Services";
 
 const AllRoutes = () => {
   return (
