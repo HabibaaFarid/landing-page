@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import PartnerCard from "./PartnerCard";
+import CardSlider from "./CardSlider";
 import "./Partners.scss";
 
 const Partners = () => {
@@ -14,7 +14,7 @@ const Partners = () => {
         reputatuion for quality care, advanced technology, and experienced
         medical staff.
       </p>
-      <PartnerCard style={{ width: "80%" }} />
+      <CardSlider />
 
       <button
         className="partners-button"

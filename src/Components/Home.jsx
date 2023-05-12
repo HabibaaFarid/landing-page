@@ -11,6 +11,7 @@ import Testimony from "./Sections/Testimony/Testimony";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
+ 
   return (
     <>
       <NavBar />

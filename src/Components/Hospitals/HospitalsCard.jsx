@@ -77,9 +77,9 @@ const HospitalsCard = (props) => {
             <p>{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
             <a
               href={`tel:${hos.mobile_no}`}
-              style={{ color: "black", textDecoration: "none" }}
+              style={{ color: "blue", textDecoration: "none" }}
             >
-              <ImPhone />
+              <ImPhone style={{ color: "black" }} />
               {"  "}
               {hos.mobile_no}
             </a>
