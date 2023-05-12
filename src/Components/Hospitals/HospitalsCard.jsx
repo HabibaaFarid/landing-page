@@ -1,21 +1,14 @@
 import { GrLocation } from "react-icons/gr";
 import { ImPhone } from "react-icons/im";
 import icon from "../images/hospital_icon.jpg";
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
 
 const HospitalsCard = (props) => {
   const hospitals = props.hospitals;
-  let hospitalInfo = [];
-
-  for (const key in hospitals) {
-    hospitalInfo.push(hospitals[key]);
-  }
+  
 
   return (
     <>
-      <NavBar />
-      {hospitalInfo.map((hos) => {
+      {hospitals.map((hos) => {
         return (
           <div
             style={{
@@ -106,7 +99,6 @@ const HospitalsCard = (props) => {
           </div>
         );
       })}
-      <Footer />
     </>
   );
 };

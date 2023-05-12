@@ -1,21 +1,16 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useSelector } from "react-redux";
 import HospitalsCard from "./HospitalsCard";
+import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 const HospitalsPage = () => {
-  const [hospitals, setHospitals] = useState({});
-  useEffect(() => {
-    axios
-      .get(
-        "https://asia-south1-arogyam-super.cloudfunctions.net/app/hospitals?lat=0.0&lon=0.0&token=arogyam"
-      )
-      .then((res) => setHospitals(res.data.data))
-      .catch((err) => console.log(err));
-  }, []);
+  const { info } = useSelector((state) => state.hospitalInfo);
+  console.log(info);
   return (
     <>
-      {hospitals ? (
-        <>
+      {info ? (
+        <div>
+          <NavBar />
           <div
             style={{
               display: "flex",
@@ -26,9 +21,10 @@ const HospitalsPage = () => {
               justifyContent: "center",
             }}
           >
-            <HospitalsCard hospitals={hospitals} />
+            <HospitalsCard hospitals={info} />
           </div>
-        </>
+          <Footer />
+        </div>
       ) : (
         ""
       )}

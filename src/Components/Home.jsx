@@ -1,3 +1,4 @@
+
 import NavBar from "./NavBar/NavBar";
 import HealthCard from "./Sections/HealthCard/HealthCard";
 import Description from "./Sections/Description/Description";
@@ -11,9 +12,9 @@ import Testimony from "./Sections/Testimony/Testimony";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
- 
+
   return (
-    <>
+    <div style={{display:"grid"}}>
       <NavBar />
       <HealthCard />
       <Description />
@@ -25,7 +26,7 @@ const Home = () => {
       <Faqs />
       <Testimony />
       <Footer />
-    </>
+    </div>
   );
 };
 

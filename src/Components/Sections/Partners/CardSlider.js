@@ -1,51 +1,37 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useSelector } from "react-redux";
+import icon from "../../images/hospital_icon.jpg";
 import { GrLocation } from "react-icons/gr";
 import { ImPhone } from "react-icons/im";
-import icon from "../../images/hospital_icon.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
 
-import { Navigation } from "swiper";
-
 export default function CardSlider() {
-  const [hospitalInfo, setHospitalInfo] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        "https://asia-south1-arogyam-super.cloudfunctions.net/app/hospitals?lat=0.0&lon=0.0&token=arogyam"
-      )
-      .then((res) => {
-        const fetchedHospitalInfo = Object.values(res.data.data);
-        setHospitalInfo(fetchedHospitalInfo);
-      })
-      .catch((err) => console.log(err));
-  });
+  const { info } = useSelector((state) => state.hospitalInfo);
   return (
     <Swiper
       slidesPerView={3}
       spaceBetween={30}
       loop={true}
       navigation={true}
-      modules={[Navigation]}
+      modules={[Navigation, Pagination]}
       className="mySwiper"
-      style={{ width: "80%" }}
+      style={{  padding: "5%" }}
     >
-      {hospitalInfo.map((hos) => {
+      {info.map((hos) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={hos._id}>
             <div
               style={{
                 display: "grid",
                 border: "1px solid grey",
                 borderRadius: "5px",
-                margin: "10px",
                 padding: "10px",
                 boxShadow: "2px 2px lightgrey",
+                height: "600px",
               }}
             >
               <img
