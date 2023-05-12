@@ -19,7 +19,6 @@ function App() {
         for (const key in res.data.data) {
           hospitalInfo.push(res.data.data[key]);
         }
-        console.log("alooo",hospitalInfo);
         dispatch(add_info(hospitalInfo));
       })
       .catch((err) => console.log(err));

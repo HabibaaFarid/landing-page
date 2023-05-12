@@ -5,7 +5,6 @@ import Footer from "../Footer/Footer";
 
 const HospitalsPage = () => {
   const { info } = useSelector((state) => state.hospitalInfo);
-  console.log(info);
   return (
     <>
       {info ? (
