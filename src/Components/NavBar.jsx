@@ -56,11 +56,18 @@ const NavBar = () => {
             }}
           >
             <Nav>
-              <Nav className="me-auto">
-                <Nav.Link onClick={() => window.location.replace("/#services")}>
-                  Services
-                </Nav.Link>
-              </Nav>
+              {window.location.pathname.includes("hospitals") ? (
+                ""
+              ) : (
+                <Nav className="me-auto">
+                  <Nav.Link
+                    onClick={() => window.location.replace("/#services")}
+                  >
+                    Services
+                  </Nav.Link>
+                </Nav>
+              )}
+
               <Nav className="me-auto">
                 <Nav.Link onClick={() => window.location.replace("/hospitals")}>
                   Hospitals
