@@ -9,3 +9,19 @@
     list-style: none;
   }
 }
+
+@media (max-width:768px) {
+  .benefits-container {
+    margin-left: 0;
+    .benefits-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-left: 4%;
+    }
+    li{
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  
+  }
+}

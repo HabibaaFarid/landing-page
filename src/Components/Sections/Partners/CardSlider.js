@@ -57,6 +57,20 @@ export default function CardSlider() {
       slidesPerView={3}
       spaceBetween={30}
       navigation={true}
+      breakpoints={{
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }}
       modules={[Navigation]}
       className="mySwiper"
       style={{ padding: "5%" }}
@@ -93,11 +107,16 @@ export default function CardSlider() {
                     </p>
                   </div>
                   <p style={{ fontWeight: "bold" }}>{hos.entity_name}</p>
-                  <a href={hos.map_link} style={linkStyle}>
-                    <GrLocation style={{ alignSelf: "center" }} />
+                  <p style={linkStyle}>
+                    <GrLocation
+                      style={{ alignSelf: "center" }}
+                      onClick={() => {
+                        window.open(hos.map_link);
+                      }}
+                    />
                     {"  "}
                     {hos.address}
-                  </a>
+                  </p>
                   <p>{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
                   <a href={`tel:${hos.mobile_no}`} style={phoneLinkStyle}>
                     <ImPhone style={{ color: "black" }} />

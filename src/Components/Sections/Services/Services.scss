@@ -16,3 +16,15 @@
     margin: 5% 0;
   }
 }
+
+@media (max-width:900px) {
+  .services-container {
+   
+    .services-cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+     row-gap: 25px;
+    }
+  }
+}

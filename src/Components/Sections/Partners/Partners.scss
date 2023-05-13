@@ -26,3 +26,18 @@
     border: #ff7f26;
   }
 }
+
+@media (max-width: 900px) {
+  .main-container {
+    .partners-subtitle {
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: center;
+      width: 80%;
+      justify-self: center;
+    }
+    .partners-button {
+      width: 30%;
+    }
+  }
+}

@@ -3,7 +3,10 @@
   justify-self: center;
   justify-items: center;
   height: 30%;
-  grid-auto-rows: 200%;
+  .hiw-icon{
+    width: 90%;
+    height:150px
+  }
   .hiw-text {
     margin-bottom: 0;
     text-align: center;

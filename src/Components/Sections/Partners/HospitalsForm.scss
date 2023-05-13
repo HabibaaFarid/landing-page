@@ -32,3 +32,42 @@
     }
   }
 }
+
+@media (max-width:900px) {
+  .main-form-container {
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    margin-top: 5%;
+    .form-container {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr;
+      .text-container {
+        display: grid;
+        .text {
+          color: #ff7f26;
+          font-weight: 500;
+          width: 65%;
+          text-align: center;
+          justify-self: center;
+          font-size: 18px;
+        }
+        .form-button {
+          width: 60%;
+          height: 50px;
+          justify-self: center;
+          margin-top: 2%;
+          margin-bottom: 20px;
+          background-color: #ff7f26;
+          color: white;
+          border-radius: 5px;
+          border: #ff7f26;
+        }
+      }
+      .hospital-img {
+        width: 100%;
+      }
+    }
+  }
+}

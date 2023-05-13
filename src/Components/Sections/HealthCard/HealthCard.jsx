@@ -4,8 +4,8 @@ const HealthCard = () => {
   return (
     <div className="div-container">
       <div className="content-container">
-        <img src={img} alt="" />
-        <h3>Healthcare Made Affordable</h3>
+        <img src={img} alt="" className="card-img"/>
+        <h3 className="card-title">Healthcare Made Affordable</h3>
       </div>
     </div>
   );

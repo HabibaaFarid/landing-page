@@ -26,9 +26,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <p style={{ justifySelf: "center", marginLeft: "45%" }}>
+        <p className="footer-reserved">
           All Rights Reserved. With Love by 7R{" "}
-          <img src={flag} alt="indian flag" style={{ width: "7%" }} />.
+          <img src={flag} alt="indian flag" style={{ width: "25px" }} />.
         </p>
       </div>
       <div className="footer-contact">
@@ -40,11 +40,11 @@ const Footer = () => {
           forward to hearing from you!
         </p>
 
-        <p style={{ marginBottom: "0px" }}>
+        <p className="footer-contact-details" style={{ marginBottom: "0px" }}>
           <ImPhone className="footer-icon" />
           9201989710
         </p>
-        <p>
+        <p className="footer-contact-details">
           <RiMailSendLine className="footer-icon" />
           Contact@7Rogyam.com
         </p>

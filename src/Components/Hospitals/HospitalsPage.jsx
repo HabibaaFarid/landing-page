@@ -18,6 +18,7 @@ const HospitalsPage = () => {
               width: "100%",
               margin: "auto",
               justifyContent: "center",
+            
             }}
           >
             <HospitalsCard hospitals={info} />
