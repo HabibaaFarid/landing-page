@@ -1,5 +1,27 @@
-.card-img {
+.des-main-container {
+  width: 40%;
+  height: 250px;
+  display: grid;
   justify-self: center;
-  width: 35%;
-  margin: 7% 0;
+  text-align: center;
+  padding: 5px;
+  .card-img {
+    justify-self: center;
+    width: 35%;
+    margin: 7% 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .des-main-container {
+    width: 40%;
+    height: 220px;
+
+    .card-img {
+      justify-self: center;
+      width: 60px;
+      height: 60px;
+      margin: 7% 0;
+    }
+  }
 }

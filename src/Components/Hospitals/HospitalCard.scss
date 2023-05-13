@@ -1,0 +1,60 @@
+.hospital-info-card {
+  display: grid;
+  width: 30%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px lightgrey;
+
+  .hodpital-card-img {
+    width: 250px;
+    height: 200px;
+    justify-self: center;
+  }
+
+  .hospital-card-srow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 2%;
+    .card-category {
+      justify-self: start;
+      align-self: center;
+      margin-bottom: 0;
+    }
+    .card-uid {
+      justify-self: end;
+      align-self: center;
+      margin-right: 2%;
+      margin-bottom: 0;
+    }
+  }
+  .card-title {
+    font-weight: bold;
+  }
+  .card-address {
+    align-self: center;
+    color: black;
+    text-decoration: none;
+  }
+  .discount-rows {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .discount-items{
+      justify-self: center;
+
+    }
+  }
+}
+@media (max-width: 900px) {
+  .hospital-info-card {
+    display: grid;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px lightgrey;
+  }
+}

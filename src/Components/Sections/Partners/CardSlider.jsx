@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import icon from "../../images/hospital_icon.jpg";
-import { GrLocation } from "react-icons/gr";
+import { FaDirections  } from "react-icons/fa";
 import { ImPhone } from "react-icons/im";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -108,7 +108,7 @@ export default function CardSlider() {
                   </div>
                   <p style={{ fontWeight: "bold" }}>{hos.entity_name}</p>
                   <p style={linkStyle}>
-                    <GrLocation
+                    <FaDirections 
                       style={{ alignSelf: "center" }}
                       onClick={() => {
                         window.open(hos.map_link);

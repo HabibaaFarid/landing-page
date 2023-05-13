@@ -1,72 +1,36 @@
-import { GrLocation } from "react-icons/gr";
+import { FaDirections } from "react-icons/fa";
 import { ImPhone } from "react-icons/im";
 import icon from "../images/hospital_icon.jpg";
+import "./HospitalCard.scss";
 
 const HospitalsCard = (props) => {
   const hospitals = props.hospitals;
-  
 
   return (
     <>
       {hospitals.map((hos) => {
         return (
-          <div
-            style={{
-              display: "grid",
-              width: "30%",
-              border: "1px solid grey",
-              borderRadius: "5px",
-              margin: "10px",
-              padding: "10px",
-              boxShadow: "2px 2px lightgrey",
-            }}
-          >
+          <div className="hospital-info-card">
             <img
               src={hos.images.length > 0 ? hos.images[0] : icon}
               alt=""
-              style={{ width: "250px", height: "200px", justifySelf: "center" }}
+              className="hodpital-card-img"
             />
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                alignItems: "center",
-                marginBottom: "2%",
-              }}
-            >
-              <p
-                style={{
-                  justifySelf: "start",
-                  alignSelf: "center",
-                  marginBottom: "0  ",
-                }}
-              >
-                {hos.category}
-              </p>
-              <p
-                style={{
-                  justifySelf: "end",
-                  alignSelf: "center",
-                  marginRight: "2%",
-                  marginBottom: "0  ",
-                }}
-              >
-                {hos.uid}
-              </p>
+            <div className="hospital-card-srow">
+              <p className="card-category">{hos.category}</p>
+              <p className="card-uid">{hos.uid}</p>
             </div>
-            <p style={{ fontWeight: "bold" }}>{hos.entity_name}</p>
-            <a
-              href={hos.map_link}
-              style={{
-                alignSelf: "center",
-                color: "black",
-                textDecoration: "none",
-              }}
-            >
-              <GrLocation style={{ alignSelf: "center" }} />
+            <p className="card-title">{hos.entity_name}</p>
+            <p>
+              <FaDirections
+                style={{ alignSelf: "center" }}
+                onClick={() => {
+                  window.open(hos.map_link);
+                }}
+              />
               {"  "}
               {hos.address}
-            </a>
+            </p>
             <p>{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
             <a
               href={`tel:${hos.mobile_no}`}
@@ -79,21 +43,13 @@ const HospitalsCard = (props) => {
             <hr style={{ color: "grey" }} />
             <div style={{ display: "grid" }}>
               <p style={{ justifySelf: "center" }}>Discount%</p>
-              <div style={{ display: "grid", gridTemplateColumns: "50% 50%" }}>
-                <p
-                  style={{ justifySelf: "center" }}
-                >{`IPD : ${hos.discount_ipd}%`}</p>
-                <p
-                  style={{ justifySelf: "center" }}
-                >{`Medicine : ${hos.discount_medicine}%`}</p>
+              <div className="discount-rows">
+                <p className="discount-items">{`IPD : ${hos.discount_ipd}%`}</p>
+                <p className="discount-items">{`Medicine : ${hos.discount_medicine}%`}</p>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "50% 50%" }}>
-                <p
-                  style={{ justifySelf: "center" }}
-                >{`OPD : ${hos.discount_opd}%`}</p>
-                <p
-                  style={{ justifySelf: "center" }}
-                >{`Diagnostic : ${hos.discount_diagnostic}%`}</p>
+              <div className="discount-rows">
+                <p className="discount-items">{`OPD : ${hos.discount_opd}%`}</p>
+                <p className="discount-items">{`Diagnostic : ${hos.discount_diagnostic}%`}</p>
               </div>
             </div>
           </div>

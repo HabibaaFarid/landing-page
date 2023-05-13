@@ -1,34 +1,23 @@
-.navcontainer {
+.main-navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin: 0;
-  background-color: white;
-  .logo1 {
-    width: 15%;
-  }
-
-  .nav-links {
-    font-size: 20px;
-    color: black;
-  }
-  select {
-    border: none;
-    font-size: 20px;
-  }
-  option {
-    font-size: 15px;
-  }
-
-  body.active-modal {
-    display: block;
-  }
-
-  .nav-buttons {
-    border: 0;
-    background-color: transparent;
-
-    align-self: center;
+  justify-content: center;
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    .navbar-logo1 {
+      width: 15%;
+      justify-self: start;
+      align-self: center;
+    }
+    .navbar-logo2 {
+      width: 50%;
+      justify-self: start;
+      align-self: center;
+    }
   }
 }
 .navbar-light .navbar-nav .nav-link {
@@ -37,3 +26,30 @@
 }
 
 /*************************************/
+
+@media (max-width: 900px) {
+  .main-navbar {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    .nav-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr max-content;
+      width: 100%;
+      margin: 0;
+      background-color: white;
+      .navbar-logo1 {
+        width: 80%;
+        justify-self: start;
+        align-self: center;
+      }
+      .navbar-logo2 {
+        display: none;
+      }
+    }
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #ff7f26;
+    font-size: 0.9rem;
+  }
+}
