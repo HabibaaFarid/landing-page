@@ -57,12 +57,14 @@
     margin-top: 2%;
     .footer-container__info {
       display: grid;
-      grid-template-columns: 30% 1fr;
+      grid-template-columns: 20% 1fr;
       column-gap: 10px;
       grid-row: 2;
+      margin-top: 5%;
       .footer-logo {
         width: 80%;
         justify-self: end;
+        align-self: start;
       }
       .footer-text-container {
         display: grid;
@@ -70,6 +72,7 @@
         align-content: center;
         width: 70%;
         margin-left: 0%;
+        justify-self: start;
         .footer-title {
           font-size: 1.2rem;
           color: #ff7f26;
