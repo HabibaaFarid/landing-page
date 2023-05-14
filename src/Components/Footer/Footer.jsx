@@ -55,7 +55,6 @@ const Footer = () => {
           <RiMailSendLine className="footer-icon" />
           Contact@7Rogyam.com
         </a>
-        up
       </div>
     </div>
   );
