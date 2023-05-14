@@ -9,8 +9,8 @@ const HospitalsCard = (props) => {
 
   return (
     <>
-      {hospitals.map((hos) => {
-        return (
+      {hospitals.map((hos) => hos.entity_name.length > 0 ?
+         (
           <div className="hospital-info-card">
             <img
               src={hos.images.length > 0 ? hos.images[0] : icon}
@@ -69,8 +69,8 @@ const HospitalsCard = (props) => {
               </div>
             </div>
           </div>
-        );
-      })}
+        ):""
+      )}
     </>
   );
 };

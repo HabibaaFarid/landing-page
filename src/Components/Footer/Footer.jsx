@@ -39,9 +39,8 @@ const Footer = () => {
           you may have. You can reach us by phone, email or chat. We look
           forward to hearing from you!
         </p>
-
         <a
-          href={`tel:920198710`}
+          href={`tel:9201989710`}
           className="footer-contact-details"
           style={{ marginBottom: "0px", textDecoration: "none", color: "blue" }}
         >
@@ -56,6 +55,7 @@ const Footer = () => {
           <RiMailSendLine className="footer-icon" />
           Contact@7Rogyam.com
         </a>
+        up
       </div>
     </div>
   );

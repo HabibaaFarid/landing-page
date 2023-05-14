@@ -77,8 +77,8 @@ export default function CardSlider() {
       style={{ padding: "5%" }}
     >
       {info
-        ? info.map((hos) => {
-            return (
+        ? info.map((hos) => hos.entity_name.length > 0 ? 
+            (
               <SwiperSlide key={hos._id}>
                 <div style={cardStyle}>
                   <img
@@ -158,8 +158,8 @@ export default function CardSlider() {
                   </div>
                 </div>
               </SwiperSlide>
-            );
-          })
+            ) :""
+          )
         : ""}
     </Swiper>
   );
