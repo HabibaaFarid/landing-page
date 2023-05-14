@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 import { FaDirections } from "react-icons/fa";
 import { ImPhone } from "react-icons/im";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles.css";
@@ -58,10 +58,15 @@ export default function CardSlider() {
       slidesPerView={3}
       spaceBetween={30}
       navigation={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: true,
+      }}
       breakpoints={{
         "@0.00": {
           slidesPerView: 1,
           spaceBetween: 10,
+         
         },
         "@0.75": {
           slidesPerView: 2,
@@ -69,10 +74,10 @@ export default function CardSlider() {
         },
         "@1.00": {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 30,
         },
       }}
-      modules={[Navigation]}
+      modules={[Autoplay,Navigation]}
       className="mySwiper"
       style={{ padding: "5%" }}
     >
