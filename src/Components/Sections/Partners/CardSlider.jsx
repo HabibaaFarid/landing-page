@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import icon from "../../images/hospital_icon.jpg";
-import { FaDirections  } from "react-icons/fa";
+import { GrLocation } from "react-icons/gr";
+import { FaDirections } from "react-icons/fa";
 import { ImPhone } from "react-icons/im";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -108,16 +109,28 @@ export default function CardSlider() {
                   </div>
                   <p style={{ fontWeight: "bold" }}>{hos.entity_name}</p>
                   <p style={linkStyle}>
-                    <FaDirections 
-                      style={{ alignSelf: "center" }}
+                    <GrLocation />
+
+                    {"  "}
+                    {hos.address}
+                  </p>
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "80% 10%",
+                    }}
+                  >
+                    <p
+                      style={{ alignItems: "center", marginBottom:"0" }}
+                    >{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
+                    <FaDirections
+                    size={40}
+                      style={{ alignSelf: "center", justifySelf:"center", color:"#ff7f26"}}
                       onClick={() => {
                         window.open(hos.map_link);
                       }}
                     />
-                    {"  "}
-                    {hos.address}
-                  </p>
-                  <p>{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
+                  </div>
                   <a href={`tel:${hos.mobile_no}`} style={phoneLinkStyle}>
                     <ImPhone style={{ color: "black" }} />
                     {"  "}

@@ -8,7 +8,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div id="contact" className="footer-container">
+    <div className="footer-container">
       <div style={{ display: "grid", justifySelf: "center" }}>
         <div className="footer-container__info">
           <img src={logo} alt="logo" className="footer-logo" />
@@ -31,7 +31,7 @@ const Footer = () => {
           <img src={flag} alt="indian flag" style={{ width: "25px" }} />.
         </p>
       </div>
-      <div className="footer-contact">
+      <div id="contact" className="footer-contact">
         <p className="footer-title2">Contact Us</p>
         <p>
           Have questions or need assistance? <br />
@@ -40,15 +40,22 @@ const Footer = () => {
           forward to hearing from you!
         </p>
 
-        <p className="footer-contact-details" style={{ marginBottom: "0px" }}>
+        <a
+          href={`tel:920198710`}
+          className="footer-contact-details"
+          style={{ marginBottom: "0px", textDecoration: "none", color: "blue" }}
+        >
           <ImPhone className="footer-icon" />
           9201989710
-        </p>
-        <p className="footer-contact-details">
+        </a>
+        <a
+          href="mailto:Contact@7Rogyam.com"
+          className="footer-contact-details"
+          style={{ textDecoration: "none", color: "blue" }}
+        >
           <RiMailSendLine className="footer-icon" />
           Contact@7Rogyam.com
-        </p>
-        <div></div>
+        </a>
       </div>
     </div>
   );
