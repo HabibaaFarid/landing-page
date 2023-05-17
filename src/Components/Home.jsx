@@ -8,7 +8,6 @@ import Partners from "./Sections/Partners/Partners";
 import HospitalsForm from "./Sections/Partners/HospitalsFrom";
 import AboutUs from "./Sections/AboutUs/AboutUs";
 import Faqs from "./Sections/Faqs/Faqs";
-import Testimony from "./Sections/Testimony/Testimony";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
@@ -24,7 +23,6 @@ const Home = () => {
       <HospitalsForm />
       <AboutUs />
       <Faqs />
-      <Testimony />
       <Footer />
     </div>
   );
