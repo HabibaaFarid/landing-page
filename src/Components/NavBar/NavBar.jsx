@@ -30,7 +30,12 @@ const NavBar = () => {
           />
         </Navbar>
         <Navbar>
-          <img src={logo2} alt="logo" className="navbar-logo2"onClick={() => navigate("/")} />
+          <img
+            src={logo2}
+            alt="logo"
+            className="navbar-logo2"
+            onClick={() => navigate("/")}
+          />
         </Navbar>
         <Navbar
           id="responsive-navbar-nav"
@@ -44,15 +49,15 @@ const NavBar = () => {
               <Nav.Link
                 onClick={() => {
                   window.location.pathname.includes("hospitals")
-                    ? window.location.replace("/#services")
-                    : window.location.replace("#services");
+                    ? navigate("/#services")
+                    : navigate("#services");
                 }}
               >
                 Services
               </Nav.Link>
             </Nav>
             <Nav className="me-auto">
-              <Nav.Link onClick={() => window.location.replace("/hospitals")}>
+              <Nav.Link onClick={() => navigate("/hospitals")}>
                 Hospitals
               </Nav.Link>
             </Nav>
