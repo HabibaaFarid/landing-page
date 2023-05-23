@@ -3,6 +3,7 @@ import flag from "../images/download.jpeg";
 import { GrLocation } from "react-icons/gr";
 import { ImPhone } from "react-icons/im";
 import { RiMailSendLine } from "react-icons/ri";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 import "./Footer.scss";
 
@@ -42,10 +43,14 @@ const Footer = () => {
         <a
           href={`tel:9201989710`}
           className="footer-contact-details"
-          style={{ marginBottom: "0px", textDecoration: "none", color: "blue" }}
+          style={{
+            marginBottom: "0px",
+            textDecoration: "none",
+            color: "blue",
+          }}
         >
           <ImPhone className="footer-icon" />
-          9201989710
+          <span style={{ fontSize: "20px" }}>9201989710</span>
         </a>
         <a
           href="mailto:Contact@7Rogyam.com"
@@ -55,6 +60,14 @@ const Footer = () => {
           <RiMailSendLine className="footer-icon" />
           Contact@7Rogyam.com
         </a>
+        <div className="social-container">
+          <p className="social-title">Follow Us </p>
+          <div className="social-icons">
+            <BsFacebook size="20" />
+            <BsInstagram size="20" />
+            <BsTwitter size="20" />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ export default function CardSlider() {
     padding: "10px",
     boxShadow: "2px 2px lightgrey",
     height: "600px",
+    width:"100%"
   };
   const imageStyle = {
     width: "250px",
@@ -66,7 +67,6 @@ export default function CardSlider() {
         "@0.00": {
           slidesPerView: 1,
           spaceBetween: 10,
-         
         },
         "@0.75": {
           slidesPerView: 2,
@@ -77,13 +77,13 @@ export default function CardSlider() {
           spaceBetween: 30,
         },
       }}
-      modules={[Autoplay,Navigation]}
+      modules={[Autoplay, Navigation]}
       className="mySwiper"
       style={{ padding: "5%" }}
     >
       {info
-        ? info.map((hos) => hos.entity_name.length > 0 ? 
-            (
+        ? info.map((hos) =>
+            hos.entity_name.length > 0 ? (
               <SwiperSlide key={hos._id}>
                 <div style={cardStyle}>
                   <img
@@ -126,11 +126,15 @@ export default function CardSlider() {
                     }}
                   >
                     <p
-                      style={{ alignItems: "center", marginBottom:"0" }}
+                      style={{ alignItems: "center", marginBottom: "0" }}
                     >{`${hos.city}, ${hos.district}, ${hos.state}, ${hos.pincode}`}</p>
                     <FaDirections
-                    size={40}
-                      style={{ alignSelf: "center", justifySelf:"center", color:"#ff7f26"}}
+                      size={40}
+                      style={{
+                        alignSelf: "center",
+                        justifySelf: "center",
+                        color: "#ff7f26",
+                      }}
                       onClick={() => {
                         window.open(hos.map_link);
                       }}
@@ -163,7 +167,9 @@ export default function CardSlider() {
                   </div>
                 </div>
               </SwiperSlide>
-            ) :""
+            ) : (
+              ""
+            )
           )
         : ""}
     </Swiper>

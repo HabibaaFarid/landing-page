@@ -32,6 +32,7 @@
   .footer-reserved {
     margin-left: 45%;
     justify-self: center;
+    align-self:end
   }
   .footer-contact {
     display: grid;
@@ -45,6 +46,21 @@
     .footer-icon {
       margin-right: 2%;
       color: black;
+    }
+    .social-container{
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      column-gap:30px;
+      margin-top:10px;
+      .social-title{
+        justify-self: start;
+        font-weight: 600;
+      }
+      .social-icons{
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+      }
     }
   }
 }
@@ -108,6 +124,10 @@
       }
       .footer-contact-details {
         font-size: 14px;
+      }
+      .social-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
     }
   }

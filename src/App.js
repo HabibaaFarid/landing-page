@@ -1,26 +1,27 @@
-import { BrowserRouter } from "react-router-dom";
-import AllRoutes from "./AllRoutes";
-import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import AllRoutes from "./AllRoutes";
+import { BrowserRouter } from "react-router-dom";
 import { add_info } from "./Redux/hospitalInfo";
 import "./App.css";
+import { getHospitalInfo } from "./core/Api.js";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    axios
-      .get(
-        "https://asia-south1-arogyam-super.cloudfunctions.net/app/hospitals?lat=0.0&lon=0.0&token=arogyam"
-      )
-      .then((res) => {
+    const getData = async () => {
+      try {
+        const data = await getHospitalInfo();
         let hospitalInfo = [];
-        for (const key in res.data.data) {
-          hospitalInfo.push(res.data.data[key]);
+        for (const key in data.data) {
+          hospitalInfo.push(data.data[key]);
         }
         dispatch(add_info(hospitalInfo));
-      })
-      .catch((err) => console.log(err));
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData();
   }, [dispatch]);
   return (
     <BrowserRouter>

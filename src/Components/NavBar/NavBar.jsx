@@ -21,22 +21,24 @@ const NavBar = () => {
   return (
     <Navbar className="main-navbar">
       <Container className="nav-container">
-        <Navbar>
-          <img
-            src={logo1}
-            alt="logo"
-            className="navbar-logo1"
-            onClick={() => navigate("/")}
-          />
-        </Navbar>
-        <Navbar>
-          <img
-            src={logo2}
-            alt="logo"
-            className="navbar-logo2"
-            onClick={() => navigate("/")}
-          />
-        </Navbar>
+        <div>
+          
+            <img
+              src={logo1}
+              alt="logo"
+              className="navbar-logo1"
+              onClick={() => navigate("/")}
+            />
+          
+          
+            <img
+              src={logo2}
+              alt="logo"
+              className="navbar-logo2"
+              onClick={() => navigate("/")}
+            />
+          
+        </div>
         <Navbar
           id="responsive-navbar-nav"
           style={{

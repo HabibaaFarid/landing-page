@@ -1,7 +1,8 @@
-.main-container {
+.desc-main-container {
   display: grid;
   justify-content: center;
   justify-self: center;
+  margin-top: -2%;
   .cards-container {
     display: flex;
     width: 50%;
@@ -28,7 +29,7 @@
 }
 
 @media (max-width: 900px) {
-  .main-container {
+  .desc-main-container {
     display: grid;
     justify-content: center;
     justify-self: center;

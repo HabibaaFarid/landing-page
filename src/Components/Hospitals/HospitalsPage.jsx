@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import HospitalsCard from "./HospitalsCard";
 import NavBar from "../NavBar/NavBar";
@@ -5,6 +6,9 @@ import Footer from "../Footer/Footer";
 
 const HospitalsPage = () => {
   const { info } = useSelector((state) => state.hospitalInfo);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {info ? (
@@ -18,7 +22,6 @@ const HospitalsPage = () => {
               width: "100%",
               margin: "auto",
               justifyContent: "center",
-            
             }}
           >
             <HospitalsCard hospitals={info} />

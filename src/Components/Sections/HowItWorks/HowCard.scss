@@ -1,14 +1,42 @@
 .hiw-card {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   justify-self: center;
   justify-items: center;
   height: 30%;
+  width: 70%;
   .hiw-icon{
-    width: 90%;
-    height:150px
+    height:100px;
+    margin: 10px 0;
+    align-self: center;
   }
   .hiw-text {
-    margin-bottom: 0;
+    margin:0 10px;
     text-align: center;
+    align-self: center;
+    width: 70%;
+  }
+}
+
+@media (max-width:900px) {
+  .hiw-card {
+    display: grid;
+    flex-direction: row;
+    justify-self: center;
+    justify-items: center;
+    height: 30%;
+    width: 70%;
+    .hiw-icon{
+      height:100px;
+      margin: 10px 0;
+      align-self: center;
+    }
+    .hiw-text {
+      margin:0 10px;
+      text-align: center;
+      align-self: center;
+      width: 100%;
+      font-weight: 600;
+    }
   }
 }

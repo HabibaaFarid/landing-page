@@ -7,7 +7,7 @@ import "./Description.scss";
 
 const Description = () => {
   return (
-    <div className="main-container">
+    <div className="desc-main-container">
       <div className="cards-container">
         <DescriptionCard
           icon={img1}
