@@ -3,13 +3,25 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import HospitalsPage from "./Components/Hospitals/HospitalsPage";
 
+const routes = {
+  home: {
+    path: "/",
+    component: Home
+  },
+  hospitals: {
+    path: "/hospitals",
+    component: HospitalsPage
+  },
+};
+
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/hospitals" element={<HospitalsPage />} />
-      <Route exact path="/#services" element={<Home />} />
+      {Object.values(routes).map(({ path, component }) => (
+        <Route key={path} path={path} element={component} />
+      ))}
     </Routes>
   );
 };
 export default AllRoutes;
+
